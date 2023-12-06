@@ -9,7 +9,6 @@ def bucket_blob_file(
     base64_encryption_key
 ):
     
-
     
     storage_client = storage.Client()
     bucket = storage_client.bucket(bucket_name)
@@ -32,8 +31,8 @@ def bucket_blob_file(
         print("file is not uploaded")
 
 bucket_blob_file(
-    bucket_name = "test-enabill-gcp-productionapi",
-    source_file_name = "/Users/hunaidv/Documents/GCP-django-k8s/Python_Projects/GCP-Python-scripts/key.json",
-    destination_blob_name = "key.json",
+    bucket_name = "your-bucket-name",
+    source_file_name = "<use pwd command followed by / then file name>",
+    destination_blob_name = "File name you want to add in gcp storage",
     base64_encryption_key = "TIbv/fjexq+VmtXzAlc63J4z5kFmWJ6NdAPQulQBT7g="
     )
