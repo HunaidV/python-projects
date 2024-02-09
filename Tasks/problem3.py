@@ -2,13 +2,8 @@
 
 
 caps = int(input("Please enter caps you would like to buy ?\n"))
-# shirts = int(input("Please enter shirts you would like to buy ?\n"))
-# hoodies = int(input("Please enter hoodies you would like to buy ?\n"))
+shirts = int(input("Please enter shirts you would like to buy ?\n"))
+hoodies = int(input("Please enter hoodies you would like to buy ?\n"))
 
 
-def cost(c):
-    d = 1
-    for n in range(d, c):
-        return n * 5
 
-print(cost(caps))
