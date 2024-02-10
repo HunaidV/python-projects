@@ -17,9 +17,18 @@ def approximate_size(size, a_kilobyte_is_1024_byte=True):
             return '{0:.1f} {1}'.format(size,suffix)
     raise ValueError("number too large")
 
+value_size = int(input("please input the bytes in mutilple of 10s only\n"))
+
+Suffix = input("Would you like to see file size in bytes ? yes/no ")
+
+if Suffix.lower() == 'yes':
+    print(approximate_size(value_size))
+else:
+    print(approximate_size(value_size, False))
+
 
 if __name__ == '__main__':
-    print(approximate_size(1000000000000, False))
+    print(approximate_size(100000000000000000, False))
 
     print(approximate_size(1000000000000))
 
