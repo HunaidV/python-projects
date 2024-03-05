@@ -17,3 +17,4 @@ except ImportError:
 
 x = 1 # no need to define variable. Its unbound variable
 
+print("The original string is : ", end="")
